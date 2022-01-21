@@ -95,6 +95,7 @@ const RrdGraphConverter = {
   _onCDEF: function (name, rpnExpression) {
     var expression = rpnExpression;
     if(this.convertRpnToJexl) {
+      RpnToJexlConverter.initialize()
       expression = RpnToJexlConverter.convert(rpnExpression);
     }
     if (this.prefix) {

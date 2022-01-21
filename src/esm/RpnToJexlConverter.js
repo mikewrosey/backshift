@@ -141,7 +141,6 @@ const RpnToJexlConverter = {
     this.operators['INF'] = function() { return '__inf'; };
     this.operators['NEGINF'] = function() { return '__neg_inf'; };
     this.operators['{diffTime}'] = function() { return '(__diff_time / 1000)'; };
-
   },
 
   convert: function (rpn) {

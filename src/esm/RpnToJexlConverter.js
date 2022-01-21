@@ -144,6 +144,7 @@ const RpnToJexlConverter = {
   },
 
   convert: function (rpn) {
+    this.initialize();
     var token, tokens, n, i, stack = [];
     tokens = rpn.split(",");
     n = tokens.length;
